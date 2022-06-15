@@ -12,7 +12,6 @@ const [foodId, setFoodId] = useState(1);
 const [sideId, setSideId] = useState(1);
 const [drinkId, setDrinkId] = useState(1);
 const [instructions, setInstructions] = useState('');
-const [formInstruction, setFormInstruction] = useState('');
 const [name, setName] = useState('Tony"s Order');
 
 
