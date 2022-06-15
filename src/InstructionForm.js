@@ -1,7 +1,26 @@
-import React from 'react'
+import React from 'react';
+import { useState } from 'react';
 
-export default function InstructionForm() {
-  return (
-    <div>InstructionForm</div>
-  );
+export default function InstructionForm({ instructions, setInstructions }) {
+  const [instructionForm, setInstructionForm] = useState('');
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    instructions([...setInstructions, instructionForm]);
+    setInstructionForm('');
+  } 
+  function handleInstructionChange(e) {
+    setInstructionForm(e.target.value);
+
+  }
+  
+  return <form onSubmit={handleSubmit}>
+    <label> Specific request 
+      <input required value={setInstructionForm} onChange={handleInstructionChange}/>
+    </label>
+    <button>let us know!</button>
+  </form>;
+    
+  
 }
