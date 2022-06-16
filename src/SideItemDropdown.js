@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function SideItemDropdown({ setSideItemId }) {
+export default function SideItemDropdown({ setSideId }) {
   function handleChange(e) {
-    setSideItemId(e.target.value);
+    setSideId(e.target.value);
   }
 
   return <select onChange={handleChange}>
