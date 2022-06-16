@@ -23,7 +23,7 @@ function App() {
     <div className='menu'>
       
       <div>
-        <h3>Order for {setName}</h3>
+        <h3>Order for {name}</h3>
         <MenuImg foodId={foodId} sideId={sideId} drinkId={drinkId} />
       
       </div>
@@ -45,7 +45,7 @@ function App() {
           </li>)
         }
       </ul>
-      <NameInput name={name}/>
+      <NameInput setName={setName}/>
 
 
     </div>

@@ -17,7 +17,7 @@ export default function InstructionForm({ instructions, setInstructions }) {
   
   return <form onSubmit={handleSubmit}>
     <label> Specific request 
-      <input required value={setInstructionForm} onChange={handleInstructionChange}/>
+      <input required value={setInstructionForm} onChange={handleInstructionChange}></input>
     </label>
     <button>let us know!</button>
   </form>;
