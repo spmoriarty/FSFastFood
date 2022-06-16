@@ -8,7 +8,7 @@ export default function InstructionForm({ instructions, setInstructions }) {
     e.preventDefault();
 
     instructions([...setInstructions, instructionForm]);
-    setInstructionForm('');
+    
   } 
   function handleInstructionChange(e) {
     setInstructionForm(e.target.value);
@@ -16,9 +16,9 @@ export default function InstructionForm({ instructions, setInstructions }) {
   }
   
   return <form onSubmit={handleSubmit}>
-    <label> Specific request 
-      <input required value={setInstructionForm} onChange={handleInstructionChange}></input>
-    </label>
+    <label> Specific request </label>
+    <input required value={setInstructions} onChange={handleInstructionChange}></input>
+    
     <button>let us know!</button>
   </form>;
     
